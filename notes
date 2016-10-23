@@ -1,0 +1,6 @@
+SELECT cadeautjes.id, p.naam AS 'van', p2.naam AS 'voor' FROM `cadeautjes`
+INNER JOIN personen AS p
+ON cadeautjes.van = p.id
+INNER JOIN personen AS p2
+ON cadeautjes.voor = p2.id
+
